@@ -1,5 +1,5 @@
 # MagicImageView
-
+[![](https://jitpack.io/v/ZipperCode/MagicImage.svg)](https://jitpack.io/#ZipperCode/MagicImage)
 ## 项目介绍
 在开发流程中，需要加载不同的图片或者动画，比如`SVGA`和`PAG`。
 
@@ -36,11 +36,11 @@ repositories {
 dependencies {
     val version = "1.0.0"
     // 核心库，可直接当做ImageView去处理
-    implementation("com.zipper.magicimage:core:${version}")
+    implementation("com.github.ZipperCode.MagicImage:core:${version}")
     // pag扩展，可选。需要使用到pag时引入
-    implementation("com.zipper.magicimage:pag:${version}")
+    implementation("com.github.ZipperCode.MagicImage:pag:${version}")
     // svga扩展，可选。需要使用到svga时引入
-    implementation("com.zipper.magicimage:svgap:${version}")
+    implementation("com.github.ZipperCode.MagicImage:svgap:${version}")
 }
 ```
 
