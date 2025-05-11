@@ -48,8 +48,10 @@ dependencies {
 
 Glide模块自动注册，App中需要实现AppGlideModule
 如果没有实现AppGlideModule的话，需要手动注册
-[PAG参考](./lib_pag/src/main/java/com/zipper/magicimage/pag/MagicPagGlideModule.kt)
-[SVGA参考](./lib_pag/src/main/java/com/zipper/magicimage/svga/MagicSvgaGlideModule.kt)
+
+[PAG Glide注册](./lib_pag/src/main/java/com/zipper/magicimage/pag/MagicPagGlideModule.kt)
+
+[SVGA Glide注册](./lib_pag/src/main/java/com/zipper/magicimage/svga/MagicSvgaGlideModule.kt)
 
 布局
 ```
@@ -69,7 +71,7 @@ Glide.with(context)
 ```
 
 监听动画,动画生命周期根据扩展View的支持情况而回调
-···
+```
 imageView.addAnimateListener { intent ->
     when(intent) {
         is AnimateStartIntent -> {
@@ -88,11 +90,12 @@ imageView.addAnimateListener { intent ->
         else -> Unit
     }
 }
-···
+```
 
 ### 属性说明
 
 | 属性名 | 属性类型 | 默认值 | 说明 |
+| :----: | :---: | :---: | :----: |
 magicCompatScaleType | ImageView.ScaleType | ImageView.ScaleType.FIT_CENTER | 扩展ImageView的ScaleType |
 magicCompatSrc | Drawable | null | 扩展ImageView的src |
 magicAutoAnim  | Boolean | false | 是否自动播放动画 |
