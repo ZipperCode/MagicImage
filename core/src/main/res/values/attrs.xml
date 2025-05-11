@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MagicImageView">
+        <!-- 同ImageView#scaleType -->
+        <attr name="magicCompatScaleType" format="enum">
+            <enum name="matrix" value="0" />
+            <enum name="fitXY" value="1" />
+            <enum name="fitStart" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+            <enum name="center" value="5" />
+            <enum name="centerCrop" value="6" />
+            <enum name="centerInside" value="7" />
+        </attr>
+        <!-- 占位图 -->
+        <attr name="magicCompatSrc" format="reference" />
+        <!-- 是否加载完成自动播放 -->
+        <attr name="magicAutoAnim" format="boolean" />
+        <!-- 是否自适应加载的图片大小 -->
+        <attr name="magicCompatViewSize" format="boolean" />
+        <!-- 是否监听动画回调-->
+        <attr name="magicAnimateListener" format="boolean" />
+        <!-- 动画循环次数 -->
+        <attr name="magicAnimateRepeat" format="integer" />
+        <!-- 是否在RecyclerView使用 -->
+        <attr name="magicInRecyclerView" format="boolean"/>
+    </declare-styleable>
+</resources>
